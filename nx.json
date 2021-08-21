@@ -14,12 +14,7 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ],
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
         "accessToken": "MGFhZDZiYzgtNTJhNi00MjQ3LThkM2UtZTY4YzM3NGVmMDkwfHJlYWQtd3JpdGU="
       }
     }
@@ -32,5 +27,13 @@
       }
     ]
   },
-  "projects": {}
+  "projects": {
+    "fantasytiers": {
+      "tags": []
+    },
+    "fantasytiers-e2e": {
+      "tags": [],
+      "implicitDependencies": ["fantasytiers"]
+    }
+  }
 }
